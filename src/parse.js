@@ -3,7 +3,7 @@ const parse = (data, format) => {
     case '.json':
       return JSON.parse(data);
     default:
-      throw new Error(`Unknown format ${format}`);
+      throw new Error(`Unknown format: ${format}`);
   }
 };
 
